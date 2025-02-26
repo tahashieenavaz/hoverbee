@@ -16,6 +16,7 @@ function hoverbee({
   triggerEvent = null,
   x = true,
   y = true,
+  reverse = false,
 }) {
   let elementInstance = null;
   let calculatedStrength = strength / 100;
@@ -38,10 +39,11 @@ function hoverbee({
     const moveX = centerX - e.x;
     const moveY = centerY - e.y;
     const factor = 1 / calculatedStrength;
+    const strengthSign = reverse ? 1 : -1;
     Hoverbee.animate(
       elementInstance,
-      x ? -moveX / factor : 0,
-      y ? -moveY / factor : 0,
+      x ? (strengthSign * moveX) / factor : 0,
+      y ? (strengthSign * moveY) / factor : 0,
       duration
     );
     const distance = Math.sqrt(

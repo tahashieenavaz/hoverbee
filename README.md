@@ -33,5 +33,17 @@ hoverbee({
 
     // animation duration for the element after detaching from the cursor to move back to the original location
     fallbackDuration = 300,
+
+    // if set to null the element moves with cursor no matter what, but if you need to trigger the move on hover or any other JavaScript event, set it here.
+    triggerEvent = null,
+
+    // enables X-axis movement
+    x = true,
+
+    // enables Y-axis movement
+    y = true,
+
+    // if set to true the element moves in reverse wrt the cursor
+    reverse = false,
 })
 ```

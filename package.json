@@ -1,6 +1,6 @@
 {
   "name": "hoverbee",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Hoverbee lets you effortlessly attach elements to the cursor.",
   "main": "hoverbee.min.js",
   "scripts": {

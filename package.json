@@ -1,0 +1,24 @@
+{
+  "name": "hoverbee",
+  "version": "1.0.3",
+  "description": "Hoverbee lets you effortlessly attach elements to the cursor.",
+  "main": "hoverbee.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahashieenavaz/hoverbee.git"
+  },
+  "keywords": [
+    "cursor",
+    "hover",
+    "sticky"
+  ],
+  "author": "Taha Shieenavaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tahashieenavaz/hoverbee/issues"
+  },
+  "homepage": "https://github.com/tahashieenavaz/hoverbee#readme"
+}

@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./art/hoverbee.gif" />
+    <img src="https://raw.githubusercontent.com/tahashieenavaz/arts/refs/heads/main/hoverbee.gif" />
 </p>
 
 Hoverbee lets you effortlessly attach elements to the cursor. I have kept the usage extremely minimal to avoid confusions of any sort.

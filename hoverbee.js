@@ -1,9 +1,11 @@
-function animate(element, x, y, duration = 300) {
-  element.animate([{ translate: `${x}px ${y}px` }], {
-    duration,
-    fill: "forwards",
-  });
-}
+const Hoverbee = {
+  animate(element, x, y, duration = 300) {
+    element.animate([{ translate: `${x}px ${y}px` }], {
+      duration,
+      fill: "forwards",
+    });
+  },
+};
 
 function hoverbee({
   element,
@@ -34,7 +36,12 @@ function hoverbee({
       const moveX = centerX - e.x;
       const moveY = centerY - e.y;
       const factor = 1 / calculatedStrength;
-      animate(elementInstance, -moveX / factor, -moveY / factor, duration);
+      Hoverbee.animate(
+        elementInstance,
+        -moveX / factor,
+        -moveY / factor,
+        duration
+      );
 
       const distance = Math.sqrt(
         Math.pow(e.x - centerX, 2) + Math.pow(centerY - e.y, 2)
@@ -42,7 +49,7 @@ function hoverbee({
 
       if (distance > threshold) {
         removeEventListener("mousemove", callback);
-        animate(elementInstance, 0, 0, fallbackDuration);
+        Hoverbee.animate(elementInstance, 0, 0, fallbackDuration);
       }
     };
 

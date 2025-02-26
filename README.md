@@ -2,10 +2,14 @@
     <img src="./art/header.svg" />
 </p>
 
+Hoverbee lets you effortlessly attach elements to the cursor. I have kept the usage extremely minimal to avoid confusions of any sort.
+
+<p align="center">
+    <img src="./art/hoverbee.gif" />
+</p>
+
 - [Installation](#installation)
 - [Configuration](#configuration)
-
-Hoverbee lets you effortlessly attach elements to the cursor. I have kept the usage extremely minimal to avoid confusions of any sort.
 
 ## Installation
 

@@ -47,7 +47,8 @@ function hoverbee({
     const distance = Math.sqrt(
       Math.pow(e.x - centerX, 2) + Math.pow(centerY - e.y, 2)
     );
-    if (!triggerEvent && distance > threshold) {
+
+    if (triggerEvent && distance > threshold) {
       removeEventListener("mousemove", callback);
       Hoverbee.animate(elementInstance, 0, 0, fallbackDuration);
     }
